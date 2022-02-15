@@ -1,0 +1,13 @@
+@import "~src/base";
+
+.Button {
+  width: 150px;
+  height: 66px;
+  border-radius: 10px;
+  background: $black_color;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}

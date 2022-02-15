@@ -1,0 +1,38 @@
+@import "~src/base.scss";
+
+.Background {
+  background: $black_color;
+}
+
+.Text {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  width: max-content;
+}
+
+.Left {
+  top: 90px;
+  left: 70px;
+  color: $black_color;
+}
+
+.Right {
+  bottom: 90px;
+  right: 70px;
+  color: white;
+}
+
+.Heart {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Disabled {
+  display: none;
+}
+

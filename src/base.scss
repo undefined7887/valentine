@@ -1,0 +1,27 @@
+$black_color: #231f20;
+$red_color: #f44336;
+
+.Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Line {
+  display: flex;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.HideOverflow {
+  overflow: hidden;
+}

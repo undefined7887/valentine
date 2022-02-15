@@ -1,0 +1,17 @@
+.Input {
+}
+
+.InputElement {
+  outline: none;
+  width: 400px;
+  height: 66px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.InputElement::placeholder {
+  color: #bdbdbd;
+}
