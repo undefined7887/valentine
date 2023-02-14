@@ -5,6 +5,7 @@ import {classes} from "src/utils";
 import HeartSvg from "assets/images/Heart.svg";
 import {useParams} from "react-router-dom";
 import {animate, enableBlock} from "src/animate";
+import {hex, utf8} from "@47ng/codec";
 
 export function HeartPage() {
   let params = useParams<{ name?: string }>();
@@ -70,12 +71,5 @@ export function HeartPage() {
 }
 
 function decodeName(encoded: string): string {
-  let hex = encoded.toString();
-  let result = '';
-
-  for (let n = 0; n < hex.length; n += 2) {
-    result += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
-  }
-
-  return result;
+  return utf8.decode(hex.decode(encoded))
 }
